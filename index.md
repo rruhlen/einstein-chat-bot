@@ -11,7 +11,8 @@
 			if (userInfo) {
 				userInfo = JSON.parse(userInfo);
 				//botSettings.prechatUserName = userInfo.name;
-				botSettings.prechatUserEmail = userInfo.username;
+				//botSettings.prechatUserEmail = userInfo.username;
+				botSettings.prechatUserEmail = 'ricky@vrtly.ai';
 			}
 
 			// Initialize the embedded service bootstrap with user information if available
