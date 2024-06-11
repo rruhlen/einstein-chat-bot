@@ -12,17 +12,16 @@
 				userInfo = JSON.parse(userInfo);
 				//botSettings.prechatUserName = userInfo.name;
 				//botSettings.prechatUserEmail = userInfo.username;
-				botSettings.prechatUserEmail = 'ricky@vrtly.ai';
+				//botSettings.prechatUserEmail = 'ricky@vrtly.ai';
 			}
 
 			// Initialize the embedded service bootstrap with user information if available
 			embeddedservice_bootstrap.settings.language = botSettings.language;
 
-			// You may need to customize these settings further based on your requirements
-			embeddedservice_bootstrap.settings.extraPrechatFormDetails = [
-				//{ label: 'Name', value: botSettings.prechatUserName, transcriptFields: ['Name__c'] },
-				{ label: 'Email', value: botSettings.prechatUserEmail, transcriptFields: ['Email__c'] }
-			];
+			 // Send data to Salesforce
+    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Name" : "Ricky Ruhlen", "Email" : "ricky@vrtly.ai"});
+
+
 
 			embeddedservice_bootstrap.init(
 				'00DHr000003YflM',
