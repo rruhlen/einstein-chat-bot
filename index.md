@@ -6,8 +6,11 @@
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
+	window.addEventListener("onEmbeddedMessagingReady", () => {
+    console.log("Received the onEmbeddedMessagingReady event…");
 		// Send data to Salesforce
 			    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Name" : "Ricky Ruhlen", "Email" : "ricky@vrtly.ai"});
+	});
 
 			embeddedservice_bootstrap.init(
 				'00DHr000003YflM',
