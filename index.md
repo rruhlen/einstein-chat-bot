@@ -22,6 +22,6 @@
 		console.error('Error loading Embedded Messaging: ', err);
 	}
 };
-
+alert("hey!!!");
 </script>
 <script type='text/javascript' src='https://vrtly.my.site.com/ESWVrtlyTestingonGitHu1716919615212/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
