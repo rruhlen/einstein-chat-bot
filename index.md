@@ -1,3 +1,5 @@
+<h2>this is a test</h2>
+
 <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 	try {
