@@ -51,7 +51,8 @@
 
 <!-- Example Pre-chat Form -->
 <form id="pre-chat-form" style="display:none;">
-	<input type="hidden" id="prechat-name-field" name="Name" />
+	<input type="hidden" id="prechat-firstname-field" name="_FirstName" />
+	<input type="hidden" id="prechat-lastname-field" name="_LastName" />
 	<input type="hidden" id="prechat-email-field" name="Email" />
-	<input type="hidden" id="prechat-org-id-field" name="OrganizationId" />
+	<input type="hidden" id="prechat-practiceid-field" name="Practice_ID" />
 </form>
